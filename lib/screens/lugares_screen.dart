@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LugaresScreen extends StatefulWidget {
+  const LugaresScreen({super.key});
+
   @override
   _LugaresScreenState createState() => _LugaresScreenState();
 }
@@ -53,7 +55,7 @@ class _LugaresScreenState extends State<LugaresScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('${lugares[index]['nombre']} marcado como visitado'),
-        duration: Duration(seconds: 2),
+        duration: const Duration(seconds: 2),
         backgroundColor: Colors.green.shade600,
       ),
     );
@@ -63,7 +65,7 @@ class _LugaresScreenState extends State<LugaresScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lugares Turísticos'),
+        title: const Text('Lugares Turísticos'),
         backgroundColor: Colors.green.shade600,
       ),
       body: ListView.builder(
@@ -101,12 +103,12 @@ class _LugaresScreenState extends State<LugaresScreen> {
                             color: Colors.green.shade800,
                           ),
                         ),
-                        SizedBox(height: 8),
+                        const SizedBox(height: 8),
                         Text(
                           lugar['descripcion'],
-                          style: TextStyle(fontSize: 16, color: Colors.black87),
+                          style: const TextStyle(fontSize: 16, color: Colors.black87),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -119,8 +121,8 @@ class _LugaresScreenState extends State<LugaresScreen> {
                             ),
                             ElevatedButton.icon(
                               onPressed: () => marcarComoVisitado(index),
-                              icon: Icon(Icons.explore),
-                              label: Text('Marcar visitado'),
+                              icon: const Icon(Icons.explore),
+                              label: const Text('Marcar visitado'),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.green,
                                 foregroundColor: Colors.white,

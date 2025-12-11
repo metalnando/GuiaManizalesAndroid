@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContadorScreen extends StatefulWidget {
+  const ContadorScreen({super.key});
+
   @override
   _ContadorScreenState createState() => _ContadorScreenState();
 }
@@ -46,7 +48,7 @@ class _ContadorScreenState extends State<ContadorScreen> {
     
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Contador reiniciado'),
+        content: const Text('Contador reiniciado'),
         backgroundColor: Colors.green.shade600,
       ),
     );
@@ -56,7 +58,7 @@ class _ContadorScreenState extends State<ContadorScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ciclo de vida y estado'),
+        title: const Text('Ciclo de vida y estado'),
         backgroundColor: Colors.green.shade600,
       ),
       body: Container(
@@ -76,12 +78,12 @@ class _ContadorScreenState extends State<ContadorScreen> {
                 size: 80,
                 color: Colors.green.shade700,
               ),
-              SizedBox(height: 30),
-              Text(
+              const SizedBox(height: 30),
+              const Text(
                 'Has presionado el botón:',
                 style: TextStyle(fontSize: 20, color: Colors.black87),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
                 '$contador veces',
                 style: TextStyle(
@@ -90,7 +92,7 @@ class _ContadorScreenState extends State<ContadorScreen> {
                   color: Colors.green.shade700,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 mensajeMotivacional,
                 style: TextStyle(
@@ -100,7 +102,7 @@ class _ContadorScreenState extends State<ContadorScreen> {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -109,31 +111,31 @@ class _ContadorScreenState extends State<ContadorScreen> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
-                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-                    child: Text('Aumentar'),
+                    child: const Text('Aumentar'),
                   ),
-                  SizedBox(width: 20),
+                  const SizedBox(width: 20),
                   ElevatedButton(
                     onPressed: reiniciarContador,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey,
                       foregroundColor: Colors.white,
-                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-                    child: Text('Reiniciar'),
+                    child: const Text('Reiniciar'),
                   ),
                 ],
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Card(
-                margin: EdgeInsets.symmetric(horizontal: 20),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
@@ -145,8 +147,8 @@ class _ContadorScreenState extends State<ContadorScreen> {
                           color: Colors.green.shade800,
                         ),
                       ),
-                      SizedBox(height: 10),
-                      Text(
+                      const SizedBox(height: 10),
+                      const Text(
                         'Cada vez que presionas "Aumentar", el método setState() '
                         'vuelve a dibujar la pantalla con el nuevo valor.',
                         textAlign: TextAlign.center,

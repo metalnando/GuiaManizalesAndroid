@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Catedral Basílica de Manizales",
+    "description": "Una joya arquitectónica que domina el centro de la ciudad.",
+    "lat": 5.0671,
+    "lng": -75.5117,
+    "imagen": "assets/images/catedral.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Nevado del Ruiz",
+    "description": "Imponente volcán y símbolo natural de la región.",
+    "lat": 4.8925,
+    "lng": -75.3197,
+    "imagen": "assets/images/nevado.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Recinto del Pensamiento",
+    "description": "Un espacio para la reflexión, la naturaleza y el saber.",
+    "lat": 5.0569,
+    "lng": -75.4644,
+    "imagen": "assets/images/recinto.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Torre Chipre",
+    "description": "Mirador con las mejores vistas del atardecer manizaleño.",
+    "lat": 5.0547,
+    "lng": -75.4975,
+    "imagen": "assets/images/chipre.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Cable Aéreo",
+    "description": "Sistema de transporte único con vistas panorámicas.",
+    "lat": 5.0669,
+    "lng": -75.4892,
+    "imagen": "assets/images/cable.jpg"
+  }
+]

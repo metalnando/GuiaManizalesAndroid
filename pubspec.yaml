@@ -1,16 +1,21 @@
 name: guia_manizales
-description: Una guía interactiva de la ciudad de Manizales
-
+description: Guía Turística de Manizales - Proyecto Educativo
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=2.18.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.2.0  
+  google_maps_flutter: ^2.2.5
+  sqflite: ^2.2.8
+  path_provider: ^2.1.0
+  path: ^1.8.3
+  url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
@@ -19,5 +24,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-shared_preferences: ^2.0.15
+  assets:
+    - assets/data/lugares.json
+    - assets/images/
